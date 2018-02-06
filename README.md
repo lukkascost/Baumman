@@ -9,3 +9,4 @@
         print the EXPERIMENT object to view average and standard deviation of metrics.
         
 ## File: GLCM_FILES.py
+        this file is used to generate all the files of attributes, in any context.
