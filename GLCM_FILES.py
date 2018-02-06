@@ -13,7 +13,7 @@ for c,i in enumerate(classes):
                         oGLCM.generateCoOccurenceHorizontal()
                         oGLCM.normalizeCoOccurence()
                         oGLCM.calculateAttributes()
-                        new_file.append(oGLCM.exportToClassfier((c+1)*10+p))
+                        new_file.append(oGLCM.exportToClassfier("c{}_p{}".format(c+1,p)))
                         cont+=1
                         img = cv2.imread("../DataSet-Baumann/IMAGENS_RECORTADAS/c{}_p{}_{:05d}.JPG".format(c+1,p,cont), 0)                            
-                        np.savetxt("03.txt",new_file)
+                        np.savetxt("03.txt",new_file, fmt="%s")
