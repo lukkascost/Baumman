@@ -2,7 +2,7 @@ from MachineLearn.Classes.Extractors.GLCM import GLCM
 import numpy as np 
 import cv2
 new_file = []
-classes = [[],[1],[1,2,3,4],[1,2,3,4]]
+classes = [[1],[],[],[]]
 for c,i in enumerate(classes):
         for p in i:
                 cont = 1
@@ -20,4 +20,4 @@ for c,i in enumerate(classes):
                         
                         cont+=1
                         img = cv2.imread("../DataSet-Baumann/IMG_CORTADAS_ELIAS/c{}_p{}_{:05d}.JPG".format(c+1,p,cont), 0)                            
-                        np.savetxt("GLCM_FILES/M1_CM8b_RE_ELIAS2.txt",new_file,delimiter=",", fmt="%s")
+                        np.savetxt("GLCM_FILES/M1_CM8b_RE_ELIAS.txt",new_file,delimiter=",", fmt="%s")
