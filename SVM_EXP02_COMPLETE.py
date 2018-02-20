@@ -11,7 +11,7 @@ qtd_per_class = np.array([326,154,35,5])
 
 #################################################################################################################################
 #basemask = basemask-1
-#for i in range(10):
+#for i in range(1):
         #oDataSet = DataSet()
         #base = np.loadtxt("GLCM_FILES/M1_CM8b.txt", usecols=(x for x in range(24)), delimiter=" ") 
         #classes  = np.loadtxt("GLCM_FILES/M1_CM8b.txt",dtype=object, usecols=(24), delimiter=" ") 
@@ -29,6 +29,7 @@ qtd_per_class = np.array([326,154,35,5])
                         #oDataSet.addSampleOfAtt(k[basemask])
         #oDataSet.normalizeDataSet()  
         #for j in range(50):
+                #print j
                 #oData  = Data(4, 20, samples=60)
                 #oData.randomTrainingTestByPercent(qtd_per_class.copy(),0.80)
                 #svm = cv2.SVM()

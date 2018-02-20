@@ -9,9 +9,9 @@ basemask = np.array([1,2,5,9,15,16,17,21,22,23,25])
 svmVectors = []
 samples_per_class = 60
 
-################################################################################################################################
+###############################################################################################################################
 #basemask = basemask-1
-#for i in range(3):
+#for i in range(1):
         #oDataSet = DataSet()
         #base = np.loadtxt("GLCM_FILES/M1_CM8b.txt", usecols=(x for x in range(24)), delimiter=" ") 
         #classes  = np.loadtxt("GLCM_FILES/M1_CM8b.txt",dtype=object, usecols=(24), delimiter=" ") 
@@ -38,11 +38,12 @@ samples_per_class = 60
                         #oDataSet.addSampleOfAtt(k[basemask])
         #oDataSet.normalizeDataSet()  
         #for j in range(50):
+                #print j
                 #oData  = Data(4, 20, samples=60)
                 #oData.randomTrainingTestPerClass()
                 #svm = cv2.SVM()
-                #oData.params = dict(kernel_type = cv2.SVM_RBF,svm_type = cv2.SVM_C_SVC,gamma=2.0,nu = 0.0,p = 0.0, coef0 = 0, k_fold=10)
-                #svm.train(np.float32( oDataSet.atributes[oData.Training_indexes]) , np.float32( oDataSet.labels[oData.Training_indexes]) ,params = oData.params)
+                #oData.params = dict(kernel_type = cv2.SVM_RBF,svm_type = cv2.SVM_C_SVC,gamma=2.0,nu = 0.0,p = 0.0, coef0 = 0, k_fold=2)
+                #svm.train_auto(np.float32( oDataSet.atributes[oData.Training_indexes]) , np.float32( oDataSet.labels[oData.Training_indexes]) ,None,None,params = oData.params)
                 #svmVectors.append(svm.get_support_vector_count())
                 #results = svm.predict_all(np.float32(oDataSet.atributes[oData.Testing_indexes])) 
                 #oData.setResultsFromClassfier(results, oDataSet.labels[oData.Testing_indexes])
@@ -52,7 +53,7 @@ samples_per_class = 60
 #print oExp
 #print min(svmVectors), max(svmVectors), np.average(svmVectors) , np.std(svmVectors)
 
-#################################################################################################################################
+################################################################################################################################
 
 oExp = oExp.load("OBJETOS/EXP_01_ACC_M1_50_CM8b_BAUMMAN.txt")
 print oExp

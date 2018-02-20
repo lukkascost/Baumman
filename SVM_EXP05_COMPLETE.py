@@ -39,11 +39,12 @@ qtd_per_class = np.array([175,200])
                 #oData.randomTrainingTestByPercent(qtd_per_class.copy(),0.80)
                 #svm = cv2.SVM()
                 #oData.params = dict(kernel_type = cv2.SVM_RBF,svm_type = cv2.SVM_C_SVC,gamma=2.0,nu = 0.0,p = 0.0, coef0 = 0, k_fold=2)
-                #svm.train(np.float32( oDataSet.atributes[oData.Training_indexes]) , np.float32( oDataSet.labels[oData.Training_indexes]) ,params = oData.params)
+                #svm.train_auto(np.float32( oDataSet.atributes[oData.Training_indexes]) , np.float32( oDataSet.labels[oData.Training_indexes]) ,None , None, params = oData.params)
                 #svmVectors.append(svm.get_support_vector_count())
                 #results = svm.predict_all(np.float32(oDataSet.atributes[oData.Testing_indexes])) 
                 #oData.setResultsFromClassfier(results, oDataSet.labels[oData.Testing_indexes])
                 #oDataSet.append(oData)
+                #print j
         #oExp.addDataSet(oDataSet, description="  50 execucoes M=1 CM=8b base BAUMMAN ")
         #print oDataSet 
         #print 

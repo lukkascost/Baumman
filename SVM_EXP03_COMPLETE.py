@@ -9,7 +9,7 @@ basemask = np.array([1,2,5,9,15,16,17,21,22,23,25])
 svmVectors = []
 qtd_per_class = np.array([82,93,35,5])
 
-##################################################################################################################################
+#################################################################################################################################
 #basemask = basemask-1
 #for i in range(1):
     #oDataSet = DataSet()
@@ -29,11 +29,12 @@ qtd_per_class = np.array([82,93,35,5])
             #oDataSet.addSampleOfAtt(k[basemask])
     #oDataSet.normalizeDataSet()  
     #for j in range(50):
+        #print j
         #oData  = Data(4, 20, samples=60)
         #oData.randomTrainingTestByPercent(qtd_per_class.copy(),0.80)
         #svm = cv2.SVM()
         #oData.params = dict(kernel_type = cv2.SVM_RBF,svm_type = cv2.SVM_C_SVC,gamma=2.0,nu = 0.0,p = 0.0, coef0 = 0, k_fold=2)
-        #svm.train(np.float32( oDataSet.atributes[oData.Training_indexes]) , np.float32( oDataSet.labels[oData.Training_indexes]) ,params = oData.params)
+        #svm.train_auto(np.float32( oDataSet.atributes[oData.Training_indexes]) , np.float32( oDataSet.labels[oData.Training_indexes]) ,None,None,params = oData.params)
         #svmVectors.append(svm.get_support_vector_count())
         #results = svm.predict_all(np.float32(oDataSet.atributes[oData.Testing_indexes])) 
         #oData.setResultsFromClassfier(results, oDataSet.labels[oData.Testing_indexes])
@@ -45,7 +46,7 @@ qtd_per_class = np.array([82,93,35,5])
 #print oExp
 #print min(svmVectors), max(svmVectors), np.average(svmVectors) , np.std(svmVectors)
 
-##################################################################################################################################
+#################################################################################################################################
 
 oExp = oExp.load("OBJETOS/EXP_03_ACC_M1_50_CM8b_BAUMMAN.txt")
 print oExp
