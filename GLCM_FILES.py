@@ -3,7 +3,7 @@ import numpy as np
 import cv2
 new_file = []
 classes = [[1],[],[],[]]
-for c,i in enumerate(classes):
+for c, i in enumerate(classes):
         for p in i:
                 cont = 1
                 img = cv2.imread("../DataSet-Baumann/IMG_CORTADAS_ELIAS/c{}_p{}_{:05d}.JPG".format(c+1,p,cont), 0)
