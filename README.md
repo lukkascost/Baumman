@@ -45,4 +45,15 @@
         the classes C1 and C2 are united to generate one new class.
         the classes C3 and C4 are united to generate one new class.
         print the EXPERIMENT object to view average and standard deviation of metrics.
+ 
+ ## File: SVM_EXP06_COMPLETE.py
+        M=1 and LBP of 4bits, database Baumman elias folder. LBP all attributes.
+        this file generate the experiment object with 50 rounds, with all images of each class being 80% for train and 20% for test.
+        The attributes of classes c1 and c2 will be choose without noise and randomly.
+        The attributes of class c3 will be choose between original image and noised image randomly.
+        all the attributes of class c4 be used by process.
+        all the attributes of each class be used by process.
+        the classes C1 and C2 are united to generate one new class.
+        the classes C3 and C4 are united to generate one new class.
+        print the EXPERIMENT object to view average and standard deviation of metrics.
                 
